@@ -36,14 +36,26 @@ body *{
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-color: #86a397;
+    background-color: #f8f2dc;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.card-central{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'monkey';
+    flex-direction: line;
+    padding: 30px 35px;
+    background-color: #86a397;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #22222256;
+}
 .left-login{
-    width: 50vw;
+    width: 60%;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -62,7 +74,7 @@ body *{
     width: 35vw;
 }
 .rigth-login{
-    width: 50vw;
+    width: 80vw;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -70,7 +82,7 @@ body *{
 }
 
 .card-login{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,8 +158,10 @@ body *{
     }
 }
 @media only screen and (max-width:600px){
-    .main-login{
+    .card-central{
         flex-direction: column;
+        height: 90%;
+        width: 90%;
     }
     .left-login > h1 {
         display: none;
