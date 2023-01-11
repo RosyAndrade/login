@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'now' ;
+    src: url('fonts/Now-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gaga' ;
+    src: url('fonts/Gagalin-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monkey' ;
+    src: url('fonts/Monkey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'play' ;
+    src: url('fonts/Play.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+img{
+    margin: 0;
+    margin-top: -45px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #f8f2dc, #e7eaf0, #86a397, #ef959c, #f8f2dc);
+    display: flex;
+    animation: colors 5s ease infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-central{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'monkey';
+    flex-direction: line;
+    padding: 30px 35px;
+    background-color: #f8f2dc;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #22222256;
+}
+
+
+.titulo > h2 {
+    text-align: center;
+    padding-top: px;
+    color: #222;
+    font-size: 16pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.textfield  > input {
+    box-shadow: none;
+    background-color: #f8f2dc;
+}
+
+input {
+    box-sizing: border-box;
+    width: full;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e7eaf0;
+    color: #222;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #22222256;
+    outline: none;
+    box-sizing: border-box;
+}
+
+select{
+    background-color:#e7eaf0;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #22222256;
+    border-color: none;
+}
+
+.btn-login{
+    padding: 10px 8px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #f8f2dc; 
+    background-color: #86a397;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #647e73;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.botao{
+    float: right;
+    align-items: baseline;
+}
+
+@media only screen and (max-width:600px){
+    .main-login{
+        width: 100%;
+    }
+    .card-central{
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+    }
+    .dados-pessoais{
+        flex-direction: column
+    }
+    .left-card > h1 {
+        display: none;
+        box-sizing: border-box;
+    }
+    .left-card{
+        width: 80%;
+        height: 40%;
+    }
+    .rigth-card{
+        width: 80%;
+        height: auto;
+    }
+    
+
+    .card-login{
+        width: 100%;
+    }
+}

@@ -169,6 +169,12 @@ body *{
 
 }
 
+.link-cadastro{
+    margin-top: 15px;
+    color: #ef959c;
+    font-size: 20pt;
+}
+
 @media only screen and (max-width:950px){
     .card-login{
         width: 85%;
