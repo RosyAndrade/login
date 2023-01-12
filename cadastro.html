@@ -1,197 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylecd.css">
-    <script src="https://kit.fontawesome.com/388ce9d89f.js" crossorigin="anonymous"></script>
-    <title>Cadastro</title>
+    <title>Nova pagina de cadastro</title>
 </head>
 <body>
-    <body>
-        <div class="main-login">
-        <div class="card-central">
-
-        <div class="left-card">
-        <div class="titulo">
-            <img src="img/DoodleCOMPLETO_semfundo.png" alt="">
-            <h2> Preencha o formulário e encontre seu melhor amigo!</h2><br />
-      </div>
-      <form action="Script_do_Formulario.php" method="post">
-      
-      <!-- DADOS PESSOAIS-->
-      <fieldset class="dados-pessoais">
-       <legend>Dados Pessoais</legend>
-       <table cellspacing="10">
-        <tr>
-         <td>
-          <label for="nome">Nome: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="email">
-         </td>
-        </tr>
-        
-        <tr>
-         <td>
-          <label>Nascimento: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-         <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-         <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <label for="rg">RG: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="rg" size="13" maxlength="13"> 
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <label>CPF:</label>
-         </td>
-         <td align="left">
-          <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
-         </td>
-        </tr>
-       </table>
-      </fieldset>
-      </div>
-
-      <br />
-
-      <!-- ENDEREÇO -->
-      <div class="rigth-card">
-      <fieldset class="dados-endereco">
-       <legend>Dados de Endereço</legend>
-       <table cellspacing="10">
-      
-        <tr>
-         <td>
-          <label for="rua">Rua:</label>
-         </td>
-         <td align="left">
-          <input type="text" name="rua">
-         </td>
-         <td>
-          <label for="numero">Numero:</label>
-         </td>
-         <td align="left">
-          <input type="text" name="numero" size="4">
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <label for="bairro">Bairro: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="bairro">
-         </td>
-         <td>
-          <label for="estado">Estado:</label>
-         </td>
-         <td align="left">
-          <select name="estado"> 
-          <option value="ac">Acre</option> 
-          <option value="al">Alagoas</option> 
-          <option value="am">Amazonas</option> 
-          <option value="ap">Amapá</option> 
-          <option value="ba">Bahia</option> 
-          <option value="ce">Ceará</option> 
-          <option value="df">Distrito Federal</option> 
-          <option value="es">Espírito Santo</option> 
-          <option value="go">Goiás</option> 
-          <option value="ma">Maranhão</option> 
-          <option value="mt">Mato Grosso</option> 
-          <option value="ms">Mato Grosso do Sul</option> 
-          <option value="mg">Minas Gerais</option> 
-          <option value="pa">Pará</option> 
-          <option value="pb">Paraíba</option> 
-          <option value="pr">Paraná</option> 
-          <option value="pe">Pernambuco</option> 
-          <option value="pi">Piauí</option> 
-          <option value="rj">Rio de Janeiro</option> 
-          <option value="rn">Rio Grande do Norte</option> 
-          <option value="ro">Rondônia</option> 
-          <option value="rs">Rio Grande do Sul</option> 
-          <option value="rr">Roraima</option> 
-          <option value="sc">Santa Catarina</option> 
-          <option value="se">Sergipe</option> 
-          <option value="sp">São Paulo</option> 
-          <option value="to">Tocantins</option> 
-         </select>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <label for="cidade">Cidade: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="cidade">
-         </td>
-         <td>
-          <label for="cep">CEP: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
-         </td>
-        </tr>
-       </table>
-      </fieldset>
-      <br />
-      
-      <!-- DADOS DE LOGIN -->
-      <fieldset class="dados-login">
-       <legend>Dados de login</legend> <div class="textfield">
-          <tr>
-         <td>
-          <label for="imagem">Imagem de perfil:</label>
-         </td>
-         <td>
-          <input type="file" name="imagem" >
-         </td>
-        </tr>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/DoodleCOMPLETO_semfundo.png" >
         </div>
-       <table cellspacing="10">
-        <tr>
-         <td>
-          <label for="email">E-mail: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="email">
-         </td>
-        </tr>
-       
-        <tr>
-         <td>
-          <label for="pass">Senha: </label>
-         </td>
-         <td align="left">
-          <input type="password" name="pass">
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <label for="passconfirm">Confirme a senha: </label>
-         </td>
-         <td align="left">
-          <input type="password" name="passconfirm">
-         </td>
-        </tr>
-       </table>
-      </fieldset>
-      <br />
-      <div class="botao">
-      <button class="btn-login"> Enviar </button>
-      <button class="btn-login" type="reset" value="Limpar">Limpar </button>  
-    </div></div>
-</div>
-</div>
-       </body>
-   
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                       <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="index.html">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmpassword">Senha</label>
+                        <input type="confirmpassword" name="confirmpassword" id="confirmpassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
